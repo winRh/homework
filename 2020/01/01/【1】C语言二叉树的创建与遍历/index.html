@@ -113,11 +113,11 @@
       author: 'Author'
     },
     algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
+      applicationID: '2P50H60UEW',
+      apiKey: 'd5c879813fa423ddc9c6d449efc3fb47',
+      indexName: 'homework',
       hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+      labels: {"input_placeholder":"输入关键字","hits_empty":"没有找到与 ${query} 相关的内容","hits_stats":"${hits} 条记录，共耗时 ${time} ms"}
     }
   };
 </script>
@@ -179,37 +179,76 @@
 </div>
 
 <nav class="site-nav">
-  
+
+
+
+
+<ul id="menu" class="menu">
+
+
+<li class="menu-item menu-item-home">
+<a href="/homework.github.io/%20%7C%7C%20home" rel="section">
+
+<i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+
+Home
+</a>
+</li>
+
+
+<li class="menu-item menu-item-archives">
+<a href="/homework.github.io/archives/%20%7C%7C%20archive" rel="section">
+
+<i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+
+Archives
+</a>
+</li>
 
   
-    <ul id="menu" class="menu">
+    <li class="menu-item menu-item-search">
       
-        
-        <li class="menu-item menu-item-home">
-          <a href="/homework.github.io/%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Home
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/homework.github.io/archives/%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
-        </li>
-      
+<a href="javascript:;" class="popup-trigger">
 
-      
-    </ul>
-  
+
+
+<i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+
+Search
+</a>
+</li>
+
+</ul>
+
+
+
+<div class="site-search">
 
   
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+</div>
+
 </nav>
 
 
@@ -701,6 +740,19 @@
   
 
 
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/homework.github.io/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/homework.github.io/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/homework.github.io/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
