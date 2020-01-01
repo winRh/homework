@@ -2,10 +2,8 @@
 
 
 
-  
 
-
-<html class="theme-next muse use-motion" lang="zh-CN">
+<html class="theme-next gemini" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -99,12 +97,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/homework.github.io/',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -184,7 +182,7 @@
 
 
 <li class="menu-item menu-item-home">
-<a href="/homework.github.io/%20%7C%7C%20home" rel="section">
+<a href="/homework.github.io/%20" rel="section">
 
 <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
 
@@ -193,12 +191,52 @@ Home
 </li>
 
 
+<li class="menu-item menu-item-about">
+<a href="/homework.github.io/about/%20" rel="section">
+
+<i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+
+About
+</a>
+</li>
+
+
+<li class="menu-item menu-item-tags">
+<a href="/homework.github.io/tags/%20" rel="section">
+
+<i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+
+Tags
+</a>
+</li>
+
+
+<li class="menu-item menu-item-categories">
+<a href="/homework.github.io/categories/%20" rel="section">
+
+<i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+
+Categories
+</a>
+</li>
+
+
 <li class="menu-item menu-item-archives">
-<a href="/homework.github.io/archives/%20%7C%7C%20archive" rel="section">
+<a href="/homework.github.io/archives/%20" rel="section">
 
 <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
 
 Archives
+</a>
+</li>
+
+
+<li class="menu-item menu-item-sitemap">
+<a href="/homework.github.io/sitemap.xml%20" rel="section">
+
+<i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+
+Sitemap
 </a>
 </li>
 
@@ -359,6 +397,10 @@ Search
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/homework.github.io/%5Bobject%20Object%5D"
+                alt="winRh" />
+            
               <p class="site-author-name" itemprop="name">winRh</p>
               <p class="site-description motion-element" itemprop="description">各种稀缺资源的收集</p>
           </div>
@@ -383,7 +425,7 @@ Search
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">tags</span>
                 
               </div>
@@ -459,7 +501,7 @@ Search
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 -->
 
@@ -574,6 +616,13 @@ Search
 
   
   
+
+
+  <script type="text/javascript" src="/homework.github.io/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/homework.github.io/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
 
@@ -758,6 +807,5 @@ Search
 
   
 
-  undefined
 <script src="/homework.github.io/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/homework.github.io/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 </html>
